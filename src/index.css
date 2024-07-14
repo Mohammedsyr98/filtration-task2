@@ -1,13 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Sen", sans-serif;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.background {
+  width: 100%;
+
+  background: linear-gradient(to right, #c98a40 70%, rgba(255, 255, 255, 0) 70%),
+    url("./images/Group.png");
+  background-size: contain;
+  background-position: right;
+}
+
+.background-reverse {
+  width: 100%;
+
+  background: linear-gradient(to left, #c98a40 58%, rgba(255, 255, 255, 0) 58%),
+    url("./images/hero-background2.png");
+  background-size: contain;
+  background-position: right;
+}
+
+.left-photo {
+  background-image: url(./images//Asset\ 1.png);
+  height: 25%;
+  bottom: 0;
+  background-size: cover;
+  background-position: 190px;
+}
+
+.background3 {
+  width: 100%;
+
+  background: linear-gradient(to right, #c98a40 70%, rgba(255, 255, 255, 0) 70%),
+    white;
+  background-size: contain;
+  background-position: right;
+}
+
+.testimonials {
+}
+.testimonials .background {
+  background-image: url(./images/Testimonials-background.png);
+  background-size: cover;
+}
+/* .slider-container {
+  padding: 20px;
+} */
+.slider-container .box {
+  display: flex !important;
+
+  background-color: white;
+  width: 98% !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px !important;
+  height: 100%; /* Ensure full height */
+}
+
+.image-container {
+  width: 100%;
+  height: 200px; /* Set a fixed height for images */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure image covers the container */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.title,
+.description {
+  width: 100%;
+}
+
+.description {
+  flex: 1; /* Ensure the description takes up remaining space */
 }
